@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fixed box-sizing value */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    text-align: center;
+}
+
+main {
+    width: 75%;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3, 1fr) 150px;
+    grid-gap: 10px;
+
+}
+
+/* Assigning different colors to each div */
+.div1 {
+    background-color: #ff9999; /* Light red */
+    padding: 20px;
+    grid-column: 1/-1;
+}
+
+.div2 {
+    background-color: #ffcc99; /* Light orange */
+    padding: 20px;
+}
+
+.div3 {
+    background-color: #ffff99; /* Light yellow */
+    padding: 20px;
+}
+
+.div4 {
+    background-color: #ccff99; /* Light green */
+    padding: 20px;
+}
+
+.div5 {
+    background-color: #99ccff; /* Light blue */
+    padding: 20px;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+.div6 {
+    background-color: #cc99ff; /* Light purple */
+    padding: 20px;
+    grid-column: 1/4;
+}
+
+.div7 {
+    background-color: #ff99cc; /* Light pink */
+    padding: 20px;
+    grid-column: 1/-1;
+}
